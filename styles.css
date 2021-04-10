@@ -1,9 +1,9 @@
 body {
-    background: url("images/body-bg.png") repeat-x scroll 0 0 #FFFFFF;
-    color: #666666;
+    background: url("images/body-bg.png") repeat-x scroll 0 0 #ffe0ee;
+    color: #f099bf;
     font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
     font-size: 12px;
-    margin: 0;
+    margin: 5px;
     padding: 0;
 }
 * {
@@ -18,14 +18,14 @@ th, td {
     padding: 10px;
 }
 th {
-    background: none repeat-x scroll left top #0173CB;
-    color: #FFFFFF;
+    background: none repeat-x scroll left top #d100ae;
+    color: #ff0026;
 }
 td {
     border-bottom: 1px solid #CCCCCC;
 }
 code, blockquote {
-    border-left: 5px solid #222222;
+    border-left: 5px solid #6b2020;
     display: block;
     margin-bottom: 20px;
     padding: 10px;
@@ -54,7 +54,7 @@ a {
     color: #000000;
 }
 a:hover {
-    color: #0173CB;
+    color: #d100ae;
     text-decoration: underline;
 }
 a:focus {
@@ -62,7 +62,6 @@ a:focus {
 }
 fieldset {
     -moz-border-bottom-colors: none;
-    -moz-border-image: none;
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
@@ -87,7 +86,6 @@ fieldset p label {
 }
 form input, form select, form textarea {
     -moz-border-bottom-colors: none;
-    -moz-border-image: none;
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
@@ -101,7 +99,7 @@ form input, form select, form textarea {
     padding: 5px;
 }
 form input.formbutton {
-    background: none repeat scroll 0 0 #0173CB;
+    background: none repeat scroll 0 0 #d100ae;
     border: medium none;
     color: #FFFFFF;
     font-family: Tahoma,Geneva,sans-serif;
@@ -148,12 +146,12 @@ h3 {
     margin-bottom: 10px;
 }
 h4 {
-    color: #0173CB;
+    color: #d100ae;
     font-size: 15px;
     padding-bottom: 10px;
 }
 h5 {
-    color: #0173CB;
+    color: #d100ae;
     font-size: 13px;
     padding-bottom: 10px;
 }
@@ -191,12 +189,74 @@ li ol, li ul {
     text-decoration: none;
 }
 #header h2 {
-    color: #000000;
+    color: #ffffff;
     font-family: Georgia,"Times New Roman",Times,serif;
     font-size: 13px;
     letter-spacing: 0;
     margin-top: 3px;
     padding-left: 4px;
+}
+#inser {
+    background-color: #000000;
+    height: 100px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    width: 960px;
+}
+.inser-top {
+    padding: 23px 420px;
+}
+#inser-imgbutton{
+    float: left;
+    height: 42px;
+    margin-top: 7px;
+}
+.imgbutton {
+    background: url("images/loading.gif") repeat scroll 0 0 #ffe8e8;
+    border-radius: 10px 10px 10px 10px;
+    color: #ffe8e800;
+    cursor: pointer;
+    display: inline-block;
+    font: 12px/100% Arial,Helvetica,sans-serif;
+    outline: medium none;
+    padding: 0.6em 1.5em;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+.imgbutton:active {
+    position: relative;
+    top: 1px;
+}
+#inser ul {
+    height: 45px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#inser ul li {
+    display: block;
+    float: left;
+    padding: 0;
+}
+#inser ul li a {
+    color: #FFFFFF;
+    display: block;
+    font-family: 'Lucida Grande','Lucida Sans Unicode',Geneva,Verdana,Sans-Serif;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#inser a:hover {
+    color: #00000000;
+    text-decoration: underline;
+}
+#inser a:active {
+    color: #ff0026;
+    text-decoration: underline;
 }
 #nav {
     background-color: #000000;
@@ -228,7 +288,7 @@ li ol, li ul {
     text-transform: uppercase;
 }
 #nav ul li a:hover {
-    color: #FFFFFF;
+    color: #ffffff00;
     text-decoration: underline;
 }
 #banner {
@@ -352,7 +412,7 @@ a.nivo-nextNav {
     background-position: 0 -22px;
 }
 .welcome-bar {
-    background: none repeat scroll 0 0 #FBC00C;
+    background: none repeat scroll 0 0 #f099bf;
     margin-top: 40px;
 }
 .bar-top {
@@ -362,8 +422,20 @@ a.nivo-nextNav {
     float: left;
     width: 720px;
 }
+.bar-tit {
+    float: left;
+    width: 720px;
+}
+.bar-tit h3 {
+    color: #ffcccb;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-style: italic;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    margin: 0;
+}
 .bar-title h3 {
-    color: #000000;
+    color: #ffffff;
     font-family: Georgia,"Times New Roman",Times,serif;
     font-style: italic;
     letter-spacing: 0;
@@ -378,7 +450,7 @@ a.nivo-nextNav {
 .button {
     background: none repeat scroll 0 0 #FFFFFF;
     border-radius: 10px 10px 10px 10px;
-    color: #FBC00C;
+    color: #f099bf;
     cursor: pointer;
     display: inline-block;
     font: 12px/100% Arial,Helvetica,sans-serif;
@@ -425,8 +497,6 @@ a.nivo-nextNav {
     line-height: 1.9em;
     margin-bottom: 20px;
 }
-.sidebar li ul {
-}
 .sidebar li ul li {
     border: medium none;
     display: block;
@@ -459,7 +529,7 @@ a.nivo-nextNav {
     text-transform: uppercase;
 }
 .sidebar li ul.blocklist li a:hover {
-    background-color: #0173CB;
+    background-color: #d100ae;
     color: #FFFFFF;
 }
 .clear {
@@ -499,14 +569,14 @@ a.nivo-nextNav {
     border-bottom: 1px solid #CCCCCC;
 }
 #content-bottom .content-bottom-inner li a {
-    background-color: #FBC00C;
+    background-color: #f099bf;
     border-radius: 5px 5px 5px 5px;
     color: #FFFFFF;
     padding: 7px;
     text-decoration: none;
 }
 #content-bottom .content-bottom-inner h4 {
-    color: #FBC00C;
+    color: #f099bf;
     font-size: 25px;
     font-weight: normal;
     padding-bottom: 0;
